@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TasteCraft | Recipe</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        TasteCraft
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="index.html#recipes">
+            Recipes
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= RECIPE PAGE ================= -->
+
+<main class="recipe-page">
+
+
+    <!-- BLURRED BACKGROUND -->
+
+    <div
+        id="recipeBackground"
+        class="recipe-background"
+    ></div>
+
+
+    <div class="recipe-overlay"></div>
+
+
+    <div class="recipe-content">
+
+
+        <!-- BACK -->
+
+        <a
+            href="index.html#recipes"
+            class="back-button"
+        >
+            ← Back to Recipes
+        </a>
+
+
+        <!-- FOOD IMAGE -->
+
+        <img
+            id="recipeImage"
+            class="recipe-main-image"
+            src=""
+            alt=""
+        >
+
+
+        <!-- TITLE -->
+
+        <p
+            id="recipeCategory"
+            class="category"
+        ></p>
+
+
+        <h1
+            id="recipeTitle"
+            class="recipe-title"
+        >
+            Loading...
+        </h1>
+
+
+        <p
+            id="recipeDescription"
+            class="recipe-description"
+        ></p>
+
+
+
+        <!-- QUICK INFORMATION -->
+
+        <div class="quick-info">
+
+
+            <div>
+
+                <strong>
+                    ⏱
+                </strong>
+
+                <span id="cookTime">
+                </span>
+
+            </div>
+
+
+            <div>
+
+                <strong>
+                    👨‍🍳
+                </strong>
+
+                <span id="difficulty">
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- INGREDIENTS -->
+
+        <div class="recipe-box">
+
+            <h2>
+                Ingredients
+            </h2>
+
+
+            <ul
+                id="ingredients"
+            ></ul>
+
+        </div>
+
+
+
+        <!-- INSTRUCTIONS -->
+
+        <div class="recipe-box">
+
+            <h2>
+                Cooking Instructions
+            </h2>
+
+
+            <ol
+                id="instructions"
+            ></ol>
+
+        </div>
+
+
+
+        <!-- BENEFITS -->
+
+        <div class="recipe-box benefits-box">
+
+            <h2>
+                Benefits
+            </h2>
+
+
+            <p class="information-note">
+
+                Food benefits depend on the ingredients,
+                portion size, preparation method and
+                individual nutritional needs.
+
+            </p>
+
+
+            <ul
+                id="benefits"
+            ></ul>
+
+        </div>
+
+
+
+        <!-- CAUTIONS -->
+
+        <div class="recipe-box warning-box">
+
+            <h2>
+                Things to Consider
+            </h2>
+
+
+            <p class="information-note">
+
+                Excessive intake or unsuitable preparation
+                can create nutritional or food-safety concerns.
+
+            </p>
+
+
+            <ul
+                id="risks"
+            ></ul>
+
+        </div>
+
+
+
+        <!-- NUTRITION -->
+
+        <div class="recipe-box">
+
+            <h2>
+                Nutrition
+            </h2>
+
+
+            <div
+                id="nutrition"
+                class="nutrition-grid"
+            ></div>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+
+<script src="recipe.js"></script>
+
+
+</body>
+
+</html>
