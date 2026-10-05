@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>TasteCraft | Discover Food</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<header class="navbar">
+
+    <a
+        href="index.html"
+        class="logo"
+    >
+        TasteCraft
+    </a>
+
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="#recipes">
+            Recipes
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            TASTECRAFT
+        </p>
+
+
+        <h1>
+            Discover the food
+            <span>you love.</span>
+        </h1>
+
+
+        <p class="hero-text">
+
+            Explore recipes, ingredients, cooking methods,
+            nutrition information and food knowledge
+            all in one place.
+
+        </p>
+
+
+        <a
+            href="#recipes"
+            class="hero-button"
+        >
+            Explore Recipes
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= RECIPE SECTION ================= -->
+
+<section
+    class="recipes-section"
+    id="recipes"
+>
+
+
+    <div class="section-heading">
+
+        <p>
+            OUR COLLECTION
+        </p>
+
+
+        <h2>
+            Explore Our Foods
+        </h2>
+
+
+        <span>
+            Move your cursor over a food.
+        </span>
+
+    </div>
+
+
+
+    <!-- SEARCH -->
+
+    <div class="search-container">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for a food..."
+        >
+
+    </div>
+
+
+
+    <!-- FOOD CARDS -->
+
+    <div
+        class="recipe-grid"
+        id="recipeGrid"
+    >
+
+
+        <!-- PILAU -->
+
+        <article
+            class="recipe-card"
+            data-food="pilau"
+        >
+
+            <div class="recipe-image">
+
+                <img
+                    src="images/pilau.jpg"
+                    alt="Pilau"
+                >
+
+            </div>
+
+
+            <div class="recipe-info">
+
+                <p class="category">
+                    KENYAN CUISINE
+                </p>
+
+
+                <h3>
+                    Pilau
+                </h3>
+
+
+                <p class="description">
+
+                    Fragrant spiced rice with
+                    rich aromas and bold flavour.
+
+                </p>
+
+
+                <button
+                    class="view-button"
+                    onclick="openRecipe('pilau')"
+                >
+                    View Recipe →
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- CHAPATI -->
+
+        <article
+            class="recipe-card"
+            data-food="chapati"
+        >
+
+            <div class="recipe-image">
+
+                <img
+                    src="images/chapati.jpg"
+                    alt="Chapati"
+                >
+
+            </div>
+
+
+            <div class="recipe-info">
+
+                <p class="category">
+                    KENYAN CUISINE
+                </p>
+
+
+                <h3>
+                    Chapati
+                </h3>
+
+
+                <p class="description">
+
+                    Soft layered flatbread
+                    enjoyed with many meals.
+
+                </p>
+
+
+                <button
+                    class="view-button"
+                    onclick="openRecipe('chapati')"
+                >
+                    View Recipe →
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- NYAMA CHOMA -->
+
+        <article
+            class="recipe-card"
+            data-food="nyama-choma"
+        >
+
+            <div class="recipe-image">
+
+                <img
+                    src="images/nyama-choma.jpg"
+                    alt="Nyama Choma"
+                >
+
+            </div>
+
+
+            <div class="recipe-info">
+
+                <p class="category">
+                    KENYAN CUISINE
+                </p>
+
+
+                <h3>
+                    Nyama Choma
+                </h3>
+
+
+                <p class="description">
+
+                    Grilled meat with a
+                    smoky and rich flavour.
+
+                </p>
+
+
+                <button
+                    class="view-button"
+                    onclick="openRecipe('nyama-choma')"
+                >
+                    View Recipe →
+                </button>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- GITHERI -->
+
+        <article
+            class="recipe-card"
+            data-food="githeri"
+        >
+
+            <div class="recipe-image">
+
+                <img
+                    src="images/githeri.jpg"
+                    alt="Githeri"
+                >
+
+            </div>
+
+
+            <div class="recipe-info">
+
+                <p class="category">
+                    KENYAN CUISINE
+                </p>
+
+
+                <h3>
+                    Githeri
+                </h3>
+
+
+                <p class="description">
+
+                    A traditional combination
+                    of maize and beans.
+
+                </p>
+
+
+                <button
+                    class="view-button"
+                    onclick="openRecipe('githeri')"
+                >
+                    View Recipe →
+                </button>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= ABOUT ================= -->
+
+<section
+    class="about-section"
+    id="about"
+>
+
+    <div class="about-content">
+
+        <p class="section-label">
+            ABOUT TASTECRAFT
+        </p>
+
+
+        <h2>
+            Food is more than a recipe.
+        </h2>
+
+
+        <p>
+
+            TasteCraft is being created to bring recipes,
+            ingredients, preparation methods, food information
+            and nutritional knowledge together in one beautiful
+            experience.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        TasteCraft
+    </div>
+
+
+    <p>
+        Discover. Cook. Enjoy.
+    </p>
+
+
+    <small>
+        © 2026 TasteCraft
+    </small>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
