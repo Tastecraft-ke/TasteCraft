@@ -1,3 +1,327 @@
+/* =====================================================
+   RECIPE DETAIL PAGE
+===================================================== */
+
+.recipe-page {
+
+    position: relative;
+
+    min-height: 100vh;
+
+    padding:
+        125px 7% 90px;
+
+    overflow: hidden;
+}
+
+
+.recipe-background {
+
+    position: fixed;
+
+    inset: -50px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    filter: blur(35px);
+
+    transform: scale(1.12);
+
+    opacity: 0.35;
+
+    z-index: -2;
+}
+
+
+.recipe-overlay {
+
+    position: fixed;
+
+    inset: 0;
+
+    background:
+        rgba(6,4,2,0.82);
+
+    z-index: -1;
+}
+
+
+.recipe-content {
+
+    max-width: 1050px;
+
+    margin: auto;
+}
+
+
+.back-button {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    padding:
+        12px 20px;
+
+    border-radius: 50px;
+
+    background:
+        rgba(255,255,255,0.10);
+
+    color: white;
+
+    margin-bottom: 35px;
+
+    transition: 0.3s ease;
+}
+
+
+.back-button:hover {
+
+    background: #ffad5c;
+
+    color: #17100a;
+
+    transform:
+        translateX(-5px);
+}
+
+
+.recipe-main-image {
+
+    width: 100%;
+
+    height: min(500px, 55vw);
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    display: block;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.50);
+}
+
+
+.recipe-title {
+
+    font-size:
+        clamp(43px, 7vw, 75px);
+
+    line-height: 1;
+
+    margin-top: 8px;
+
+    margin-bottom: 18px;
+}
+
+
+.recipe-description {
+
+    color: #cccccc;
+
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    max-width: 800px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================================
+   QUICK INFORMATION
+===================================================== */
+
+.quick-info {
+
+    display: flex;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 45px;
+}
+
+
+.quick-info div {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding:
+        12px 18px;
+
+    border-radius: 12px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    color: #ddd;
+}
+
+
+.quick-info strong {
+
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   RECIPE BOX
+===================================================== */
+
+.recipe-box {
+
+    margin-bottom: 30px;
+
+    padding: 32px;
+
+    border-radius: 20px;
+
+    background:
+        rgba(17,11,7,0.90);
+
+    border:
+        1px solid
+        rgba(255,255,255,0.10);
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+.recipe-box h2 {
+
+    color: #ffad5c;
+
+    font-size: 29px;
+
+    margin-bottom: 22px;
+}
+
+
+.recipe-box ul,
+.recipe-box ol {
+
+    padding-left: 25px;
+
+    color: #d2d2d2;
+
+    line-height: 2;
+}
+
+
+.recipe-box li {
+
+    margin-bottom: 7px;
+}
+
+
+/* =====================================================
+   INFORMATION NOTE
+===================================================== */
+
+.information-note {
+
+    color: #999;
+
+    line-height: 1.7;
+
+    margin-bottom: 18px;
+
+    font-size: 14px;
+}
+
+
+/* =====================================================
+   WARNING
+===================================================== */
+
+.warning-box {
+
+    border-left:
+        5px solid #e36b5d;
+}
+
+
+.warning-box h2 {
+
+    color: #ff8273;
+}
+
+
+/* =====================================================
+   BENEFITS
+===================================================== */
+
+.benefits-box {
+
+    border-left:
+        5px solid #75c985;
+}
+
+
+.benefits-box h2 {
+
+    color: #8ce09b;
+}
+
+
+/* =====================================================
+   NUTRITION GRID
+===================================================== */
+
+.nutrition-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(170px,1fr));
+
+    gap: 15px;
+}
+
+
+.nutrition-item {
+
+    padding: 18px;
+
+    border-radius: 14px;
+
+    background:
+        rgba(255,255,255,0.06);
+}
+
+
+.nutrition-item strong {
+
+    display: block;
+
+    font-size: 22px;
+
+    color: white;
+
+    margin-bottom: 5px;
+}
+
+
+.nutrition-item span {
+
+    color: #9f9f9f;
+
+    font-size: 13px;
+}
 <!DOCTYPE html>
 <html lang="en">
 
